@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+
+    <div class="container">
+      <!-- Timeblocks go here -->
+      
+      <div id="currentHour"></div>
+      <table class="table">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col" id="time-column">Time</th>
+            <th id="appointment-column" scope="col">Appointment</th>
+            <th id="confirm-column" scope="col">Confirm</th>
+          </tr>
+        </thead>
+        
+        <!-- Schedule Table -->
+        <tbody>
+          <tr>
+            <th class="hour" scope="row">9AM</th>
+            <td class="time-block" id=9><textarea class="w-100" name="input-box" placeholder="Enter Appointment Name"></textarea></td>
+            <td class="saveBtn lockAppointment"><a type="submit" value="submit" class="lockIcon" id="save1">&#128274;</a></td>
+          </tr>
+          <tr>
+            <th class="hour" scope="row">10AM</th>
+            <td class="time-block" id=10><textarea class="w-100" name="input-box2" placeholder="Enter Appointment Name"></textarea></td>
+            <td class="saveBtn lockAppointment"><a type="submit" value="submit" class="lockIcon" id="save2">&#128274;</a></td>
+          </tr>
+          <tr>
+            <th class="hour" scope="row">11AM</th>
+            <td class="time-block" id=11><textarea class="w-100" name="input-box3" placeholder="Enter Appointment Name"></textarea></td>
+            <td class="saveBtn lockAppointment"><a type="submit" value="submit" class="lockIcon" id="save3">&#128274;</a></td>
+          </tr>
+          <tr>
+            <th class="hour" scope="row">12AM</th>
+            <td class="time-block" id=12><textarea class="w-100" name="input-box4" placeholder="Enter Appointment Name"></textarea></td>
+            <td class="saveBtn lockAppointment"><a type="submit" value="submit" class="lockIcon" id="save4">&#128274;</a></td>
+          </tr>
+          <tr>
+            <th class="hour" scope="row">1PM</th>
+            <td class="time-block" id=13><textarea class="w-100" name="input-box5" placeholder="Enter Appointment Name"></textarea></td>
+            <td class="saveBtn lockAppointment"><a type="submit" value="submit" class="lockIcon" id="save5">&#128274;</a></td>
+          </tr>
+          <tr>
+            <th class="hour" scope="row">2PM</th>
+            <td class="time-block" id=14><textarea class="w-100" name="input-box6" placeholder="Enter Appointment Name"></textarea></td>
+            <td class="saveBtn lockAppointment"><a type="submit" value="submit" class="lockIcon" id="save6">&#128274;</a></td>
+          </tr>
+          <tr>
+            <th class="hour" scope="row">3PM</th>
+            <td class="time-block" id=15><textarea class="w-100" name="input-box7" placeholder="Enter Appointment Name"></textarea></td>
+            <td class="saveBtn lockAppointment"><a type="submit" value="submit" class="lockIcon" id="save7">&#128274;</a></td>
+          </tr>
+          <tr>
+            <th class="hour" scope="row">4PM</th>
+            <td class="time-block" id=16><textarea class="w-100" name="input-box8" placeholder="Enter Appointment Name"></textarea></td>
+            <td class="saveBtn lockAppointment"><a type="submit" value="submit" class="lockIcon" id="save8">&#128274;</a></td>
+          </tr>
+          <tr>
+            <th class="hour" scope="row">5PM</th>
+            <td class="time-block" id=17><textarea class="w-100" name="input-box9" placeholder="Enter Appointment Name"></textarea></td>
+            <td class="saveBtn lockAppointment"><a type="submit" value="submit" class="lockIcon" id="save9">&#128274;</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
