@@ -73,3 +73,42 @@ function getInput() {
         inputText8: inputText8.val(),
         inputText9: inputText9.val(),
     };
+
+    localStorage.setItem('text', JSON.stringify(inputField));
+}
+
+// Save Input Function
+function saveInput() {
+
+    var inputValue = JSON.parse(localStorage.getItem('text'));
+
+    if (inputValue !== null) {
+        inputText.text(inputValue.inputText);
+        inputText2.text(inputValue.inputText2);
+        inputText3.text(inputValue.inputText3);
+        inputText4.text(inputValue.inputText4);
+        inputText5.text(inputValue.inputText5);
+        inputText6.text(inputValue.inputText6);
+        inputText7.text(inputValue.inputText7);
+        inputText8.text(inputValue.inputText8);
+        inputText9.text(inputValue.inputText9);
+    }
+
+    else{
+        return;
+    }
+};
+
+saveBtn.on('click', function(event){
+    event.preventDefault();
+    window.alert('Appointment Saved');
+    console.log(event.target)
+    saveInput();
+    getInput();
+});
+
+function maintain() {
+    saveInput();
+}
+
+maintain();
