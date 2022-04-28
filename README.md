@@ -13,7 +13,7 @@ WHEN I refresh the page
 THEN the saved events persist
 
 ## IMAGE
-[!Image:DaySchedule] (img/Schedule .jpg)
+![Image:DaySchedule!](img/Schedule .jpg)
 
 
 
