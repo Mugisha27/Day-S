@@ -12,7 +12,7 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 
-## IMAGE
+## IMAGE.
 ![Image:DaySchedule!](img/Schedule.jpg)
 
 ## QUESTIONS
