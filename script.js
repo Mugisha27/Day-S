@@ -8,7 +8,7 @@ var currentDate = moment().format('dddd MMMM Do, YYYY');
 $("#currentDay").text(currentDate);
 
 
-// Placeholder
+
 
 var timeDisplayEl = $('#currentHour');
 function displayTime() {
@@ -16,7 +16,7 @@ function displayTime() {
 }
 
 
-// styling time-blocks for hours that have alread passed
+
 function pastTimeSlot() {
     for(var i = currentHour - 1; i >= 9; i--){
         if(i >= 9 && i <= 17){
@@ -25,14 +25,14 @@ function pastTimeSlot() {
     }
 }
 
-// styling time-blocks for the current hour
+
 function currentTimeSlot() {
     if(currentHour >= 9 && currentHour <= 17){
         document.getElementById(currentHour).classList.add('present');
     }
 }
 
-// styling time-blocks for hours that haven't alread passed
+
 function futureTimeSlot() {
     for(var j = +currentHour + 1; j <= 17; j++){
         if(j <= 17){
@@ -59,7 +59,7 @@ var inputText9 = $('textarea[name="input-box8"]');
 var saveBtn = $('.saveBtn');
 var save1 = $('#save1');
 
-// Get Input Function
+
 function getInput() {
 
     var inputField = {
@@ -77,7 +77,7 @@ function getInput() {
     localStorage.setItem('text', JSON.stringify(inputField));
 }
 
-// Save Input Function
+
 function saveInput() {
 
     var inputValue = JSON.parse(localStorage.getItem('text'));
